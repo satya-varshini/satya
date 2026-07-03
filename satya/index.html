@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Health Care Advisor</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <h1>Health Care Advisor</h1>
+      <p>Get personalized wellness guidance, healthy habits, and lifestyle tips in minutes.</p>
+    </header>
+
+    <section class="advisor-panel">
+      <div class="form-card">
+        <h2>Tell us about yourself</h2>
+        <form id="health-form">
+          <label>
+            Age
+            <input type="number" id="age" min="1" max="120" placeholder="Enter your age" required />
+          </label>
+
+          <label>
+            Gender
+            <select id="gender">
+              <option value="female">Female</option>
+              <option value="male">Male</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+
+          <label>
+            Activity level
+            <select id="activity">
+              <option value="low">Low</option>
+              <option value="moderate" selected>Moderate</option>
+              <option value="high">High</option>
+            </select>
+          </label>
+
+          <label>
+            Goal
+            <select id="goal">
+              <option value="general" selected>General wellness</option>
+              <option value="lose">Weight loss</option>
+              <option value="gain">Muscle gain</option>
+              <option value="stress">Stress management</option>
+            </select>
+          </label>
+
+          <button type="submit" class="button">Get Advice</button>
+        </form>
+      </div>
+
+      <div class="advice-card">
+        <h2>Your health advice</h2>
+        <div id="advice-output" class="advice-output">
+          <p>Complete the form to receive tailored health and wellness suggestions.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
